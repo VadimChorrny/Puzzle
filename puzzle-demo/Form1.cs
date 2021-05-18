@@ -31,6 +31,8 @@ namespace puzzle_demo
             {
                 pbSecond.Image = (Image)e.Data.GetData(DataFormats.Bitmap);
                 pbFirst.Image = null;
+                pbThird.Image = null;
+                pbFour.Image = null;
             }
             else if (e.Data.GetDataPresent(DataFormats.Bitmap) || e.Data.GetDataPresent(DataFormats.FileDrop))
             {
@@ -64,6 +66,8 @@ namespace puzzle_demo
             {
                 pbFour.Image = (Image)e.Data.GetData(DataFormats.Bitmap);
                 pbSecond.Image = null;
+                pbFirst.Image = null;
+                pbThird.Image = null;
             }
             else if (e.Data.GetDataPresent(DataFormats.Bitmap) || e.Data.GetDataPresent(DataFormats.FileDrop))
             {
@@ -91,6 +95,9 @@ namespace puzzle_demo
             {
                 pbThird.Image = (Image)e.Data.GetData(DataFormats.Bitmap);
                 pbFour.Image = null;
+                pbFirst.Image = null;
+                pbSecond.Image = null;
+
             }
             else if (e.Data.GetDataPresent(DataFormats.Bitmap) || e.Data.GetDataPresent(DataFormats.FileDrop))
             {
@@ -117,6 +124,8 @@ namespace puzzle_demo
             if (e.Data.GetDataPresent(DataFormats.Bitmap))
             {
                 pbFirst.Image = (Image)e.Data.GetData(DataFormats.Bitmap);
+                pbFour.Image = null;
+                pbSecond.Image = null;
                 pbThird.Image = null;
             }
             else if (e.Data.GetDataPresent(DataFormats.Bitmap) || e.Data.GetDataPresent(DataFormats.FileDrop))
