@@ -50,6 +50,8 @@ namespace puzzle_demo
             this.pbFirst.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbFirst.TabIndex = 0;
             this.pbFirst.TabStop = false;
+            this.pbFirst.DragDrop += new System.Windows.Forms.DragEventHandler(this.pbFirst_DragDrop);
+            this.pbFirst.DragEnter += new System.Windows.Forms.DragEventHandler(this.pbFirst_DragEnter);
             this.pbFirst.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbFirst_MouseDown);
             // 
             // pbSecond
@@ -62,6 +64,7 @@ namespace puzzle_demo
             this.pbSecond.TabStop = false;
             this.pbSecond.DragDrop += new System.Windows.Forms.DragEventHandler(this.pbSecond_DragDrop);
             this.pbSecond.DragEnter += new System.Windows.Forms.DragEventHandler(this.pbSecond_DragEnter);
+            this.pbSecond.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbSecond_MouseDown);
             // 
             // pbThird
             // 
@@ -71,15 +74,21 @@ namespace puzzle_demo
             this.pbThird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbThird.TabIndex = 2;
             this.pbThird.TabStop = false;
+            this.pbThird.DragDrop += new System.Windows.Forms.DragEventHandler(this.pbThird_DragDrop);
+            this.pbThird.DragEnter += new System.Windows.Forms.DragEventHandler(this.pbThird_DragEnter);
+            this.pbThird.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbThird_MouseDown);
             // 
             // pbFour
             // 
-            this.pbFour.Location = new System.Drawing.Point(287, 293);
+            this.pbFour.Location = new System.Drawing.Point(283, 293);
             this.pbFour.Name = "pbFour";
             this.pbFour.Size = new System.Drawing.Size(265, 275);
             this.pbFour.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbFour.TabIndex = 3;
             this.pbFour.TabStop = false;
+            this.pbFour.DragDrop += new System.Windows.Forms.DragEventHandler(this.pbFour_DragDrop);
+            this.pbFour.DragEnter += new System.Windows.Forms.DragEventHandler(this.pbFour_DragEnter);
+            this.pbFour.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbFour_MouseDown);
             // 
             // button1
             // 
