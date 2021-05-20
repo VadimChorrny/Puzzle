@@ -43,7 +43,7 @@ namespace puzzle_demo
             // 
             // pbFirst
             // 
-            this.pbFirst.Image = global::puzzle_demo.Properties.Resources.first;
+            this.pbFirst.Image = global::puzzle_demo.Properties.Resources._1;
             this.pbFirst.Location = new System.Drawing.Point(12, 12);
             this.pbFirst.Name = "pbFirst";
             this.pbFirst.Size = new System.Drawing.Size(265, 275);
@@ -56,7 +56,7 @@ namespace puzzle_demo
             // 
             // pbSecond
             // 
-            this.pbSecond.Image = global::puzzle_demo.Properties.Resources.second;
+            this.pbSecond.Image = global::puzzle_demo.Properties.Resources._2;
             this.pbSecond.Location = new System.Drawing.Point(287, 12);
             this.pbSecond.Name = "pbSecond";
             this.pbSecond.Size = new System.Drawing.Size(265, 275);
@@ -69,7 +69,7 @@ namespace puzzle_demo
             // 
             // pbThird
             // 
-            this.pbThird.Image = global::puzzle_demo.Properties.Resources.third;
+            this.pbThird.Image = global::puzzle_demo.Properties.Resources.Screenshot_2021_05_18_1900411;
             this.pbThird.Location = new System.Drawing.Point(12, 293);
             this.pbThird.Name = "pbThird";
             this.pbThird.Size = new System.Drawing.Size(265, 275);
@@ -82,7 +82,7 @@ namespace puzzle_demo
             // 
             // pbFour
             // 
-            this.pbFour.Image = global::puzzle_demo.Properties.Resources.four;
+            this.pbFour.Image = global::puzzle_demo.Properties.Resources._4;
             this.pbFour.Location = new System.Drawing.Point(283, 293);
             this.pbFour.Name = "pbFour";
             this.pbFour.Size = new System.Drawing.Size(265, 275);

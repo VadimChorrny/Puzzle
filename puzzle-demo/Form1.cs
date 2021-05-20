@@ -22,17 +22,16 @@ namespace puzzle_demo
             pbSecond.AllowDrop = true;
             pbFour.AllowDrop = true;
             pbThird.AllowDrop = true;
-
         }
 
         private void pbSecond_DragDrop(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(DataFormats.Bitmap))
             {
+                pbFour.Image = pbSecond.Image;
                 pbSecond.Image = (Image)e.Data.GetData(DataFormats.Bitmap);
-                pbFirst.Image = null;
-                pbThird.Image = null;
-                pbFour.Image = null;
+                pbFirst.Image = pbFour.Image;
+
             }
             else if (e.Data.GetDataPresent(DataFormats.Bitmap) || e.Data.GetDataPresent(DataFormats.FileDrop))
             {
@@ -65,9 +64,7 @@ namespace puzzle_demo
             if (e.Data.GetDataPresent(DataFormats.Bitmap))
             {
                 pbFour.Image = (Image)e.Data.GetData(DataFormats.Bitmap);
-                pbSecond.Image = null;
-                pbFirst.Image = null;
-                pbThird.Image = null;
+
             }
             else if (e.Data.GetDataPresent(DataFormats.Bitmap) || e.Data.GetDataPresent(DataFormats.FileDrop))
             {
@@ -94,9 +91,7 @@ namespace puzzle_demo
             if (e.Data.GetDataPresent(DataFormats.Bitmap))
             {
                 pbThird.Image = (Image)e.Data.GetData(DataFormats.Bitmap);
-                pbFour.Image = null;
-                pbFirst.Image = null;
-                pbSecond.Image = null;
+
 
             }
             else if (e.Data.GetDataPresent(DataFormats.Bitmap) || e.Data.GetDataPresent(DataFormats.FileDrop))
@@ -124,9 +119,7 @@ namespace puzzle_demo
             if (e.Data.GetDataPresent(DataFormats.Bitmap))
             {
                 pbFirst.Image = (Image)e.Data.GetData(DataFormats.Bitmap);
-                pbFour.Image = null;
-                pbSecond.Image = null;
-                pbThird.Image = null;
+
             }
             else if (e.Data.GetDataPresent(DataFormats.Bitmap) || e.Data.GetDataPresent(DataFormats.FileDrop))
             {
